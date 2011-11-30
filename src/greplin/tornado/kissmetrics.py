@@ -76,7 +76,14 @@ class Kissmetrics(object):
     params['_p'] = self._user_id
     self._call(self.KM_EVENT, params)
 
+
   def set(self, **params):
+    """Set properties on a person without tracking an event.
+
+    example: self.set(test_name="testA")
+    This will assign the property "testA" to the user identified by self._user_id.
+    This property can be used to segment your visitors when viewing reports.
+    """
     params = params or {}
     params['_p'] = self._user_id
     self._call(self.KM_SET, params)
