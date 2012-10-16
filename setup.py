@@ -26,7 +26,7 @@ setup(name='greplin-tornado-kissmetrics',
       license='Apache',
       author='Greplin, Inc.',
       author_email='opensource@greplin.com',
-      url='http://www.github.com/Greplin/greplin-tornado-kissmetrics',
+      url='https://www.github.com/Cue/greplin-tornado-kissmetrics',
       package_dir = {'':'src'},
       packages = [
         'greplin',
